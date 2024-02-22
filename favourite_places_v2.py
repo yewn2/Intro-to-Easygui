@@ -2,7 +2,7 @@ import easygui
 
 name = easygui.enterbox("What is your name?", "Name")
 pronoun = easygui.buttonbox("What is your preferred pronoun?",
-                            "Pronoun", ["his", "her", "their"])
+                            "Pronoun", ["His", "Her", "Their"])
 places = [easygui.enterbox("What is the place you would most like to visit?"),
           easygui.enterbox("Pick a second place?"),
           easygui.enterbox("Pick a third place?")]
