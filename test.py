@@ -28,3 +28,4 @@ welcome = easygui.msgbox("Welcome to Easygui", title="Welcome")
 
 gender = easygui.buttonbox("Choose gender", "Gender",
                            ["man", "woman", "other"])
+print(gender)
