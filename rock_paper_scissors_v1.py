@@ -17,17 +17,13 @@ while welcome == "Yes":
                             f"chose {pc_choice}")
     if pc_choice == my_choice:
         easygui.msgbox("This was a draw")
-    elif pc_choice == weapons[0] and my_choice == weapons[1]:
+    elif ((pc_choice == weapons[0] and my_choice == weapons[1]) or
+          (pc_choice == weapons[1] and my_choice == weapons[2]) or
+          (pc_choice == weapons[2] and my_choice == weapons[0])):
         easygui.msgbox("You win")
-    elif pc_choice == weapons[1] and my_choice == weapons[2]:
-        easygui.msgbox("You win")
-    elif pc_choice == weapons[2] and my_choice == weapons[0]:
-        easygui.msgbox("You win")
-    elif pc_choice == weapons[0] and my_choice == weapons[2]:
-        easygui.msgbox("Computer wins")
-    elif pc_choice == weapons[1] and my_choice == weapons[0]:
-        easygui.msgbox("Computer wins")
-    elif pc_choice == weapons[2] and my_choice == weapons[1]:
+    elif ((pc_choice == weapons[0] and my_choice == weapons[2]) or
+          (pc_choice == weapons[1] and my_choice == weapons[0]) or
+          (pc_choice == weapons[2] and my_choice == weapons[1])):
         easygui.msgbox("Computer wins")
 
     welcome = easygui.buttonbox("Welcome to Rock Paper Scissors\n"
