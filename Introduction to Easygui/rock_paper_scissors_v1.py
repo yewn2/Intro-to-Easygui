@@ -11,7 +11,7 @@ while welcome == "Yes":
     weapons = ["Rock", "Paper", "Scissors"]
     playername = easygui.enterbox("Enter your name", "Name")
     my_choice = easygui.buttonbox("Choose your weapon", "Weapon choice",
-                               [weapons[0], weapons[1], weapons[2]])
+                                  [weapons[0], weapons[1], weapons[2]])
     pc_choice = random.choice(weapons)
     choice = easygui.msgbox(f"{playername} chose {my_choice} and the computer "
                             f"chose {pc_choice}")
