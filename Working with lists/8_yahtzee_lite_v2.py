@@ -22,7 +22,8 @@ def roll(player):
                                            ["Roll again", "Stick"])
         else:
             roll_again = "Stick"
-            easygui.msgbox(f"{player} roll {rolls}: \n{dices}\n\n")
+            easygui.msgbox(f"{player} roll {rolls}: \n{dices}\n\n",
+                           "Roll", "Stick")
     amount = 0
     for number in dice_list:
         if dice_list.count(number) == 5:
