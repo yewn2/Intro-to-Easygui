@@ -15,9 +15,14 @@ def roll(player):
         for dice in range(0, 5):
             dice_list.append(random.choice(values))
         dices = " ".join(dice_list)
-        roll_again = easygui.buttonbox(f"{player} roll {rolls}: {dices}\n\n"
-                                       f"Choose:", "Roll",
-                                       ["Roll again", "Stick"])
+        if rolls != 3:
+            roll_again = easygui.buttonbox(f"{player} roll {rolls}: "
+                                           f"\n{dices}\n\n"
+                                           f"Choose:", "Roll",
+                                           ["Roll again", "Stick"])
+        else:
+            roll_again = "Stick"
+            easygui.msgbox(f"{player} roll {rolls}: \n{dices}\n\n")
     amount = 0
     for number in dice_list:
         if dice_list.count(number) == 5:
