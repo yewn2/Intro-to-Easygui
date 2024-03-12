@@ -82,7 +82,7 @@ def yahtzee_lite_2():
                 f"Do you want to play another round?", "Result",
                 ["Yes", "No"])
     easygui.msgbox("Thanks for playing Yahtzee! Lite for 2 players",
-                   "Goodbye")
+                   "Goodbye", "Exit")
 
 
 yahtzee_lite_2()
