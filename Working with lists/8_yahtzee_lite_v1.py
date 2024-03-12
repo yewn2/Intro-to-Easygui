@@ -21,7 +21,8 @@ def yahtzee_lite():
                                                f"Choose:", "Roll",
                                                ["Roll again", "Stick"])
             else:
-                easygui.msgbox(f"You rolled: {dices}")
+                easygui.msgbox(f"You rolled: {dices}",
+                               "Roll", "Stick")
                 roll_again = "Stick"
         amount = 0
         for number in dice_list:
