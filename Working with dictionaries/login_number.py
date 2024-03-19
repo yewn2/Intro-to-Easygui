@@ -3,8 +3,8 @@ import easygui
 
 def login_number():
     logins = {
-        "window": "cross5",
-        "guest": "12345",
+        "w1nd0w": "cross5",
+        "gUeSt": "12345",
         "superhero": "hero1",
         "new_login": "password"
     }
