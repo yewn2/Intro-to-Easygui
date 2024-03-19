@@ -1,7 +1,7 @@
 import easygui
 
 
-def login_number():
+def login_check():
     logins = {
         "w1nd0w": "cross5",
         "gUeSt": "12345",
@@ -24,4 +24,4 @@ def login_number():
         easygui.msgbox("Sorry, wrong password", "Incorrect password")
 
 
-login_number()
+login_check()
